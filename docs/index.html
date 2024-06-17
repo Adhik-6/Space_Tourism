@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/shared/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss"></style>
+  <link rel="stylesheet" href="./space_tour.css">
+  <script>var currentPage = 'index';</script>
+  <title>Space tourism website</title>
+</head>
+<body class="relative min-h-screen bg-[url('./assets/home/background-home-mobile.jpg')] sm:bg-[url('./assets/home/background-home-tablet.jpg')] md:bg-[url('./assets/home/background-home-desktop.jpg')] bg-center bg-cover  bg-no-repeat text-white">
+  <header>
+    <nav class="whitespace-nowrap barlow-condensed-regular pt-5 px-5 flex justify-between sm:grid sm:grid-cols-12 md:grid-cols-3 sm:px-0 sm:pt-0 md:pt-10 md:h-32 items-center">
+      <div class="sm:block sm:ps-8 md:ps-10 sm:col-span-2 md:col-span-1">
+        <img class="w-10 sm:w-[48px]" src="./assets/shared/logo.svg" alt="logo">
+      </div>
+      <menu class="sm:col-span-10 md:col-span-2 hidden sm:flex justify-between items-center relative h-20 bg-black bg-opacity-10 backdrop-blur-[12px] gap-[48px] md:px-[55px] sm:px-[40px] shadow-md">
+        <hr class="hidden md:block border-slate-600 absolute w-[38%] top-10 -left-[35%]">
+        <li class="relative bd-active-state"><a href="#">00 &nbsp; HOME</a></li>
+        <li class="relative bd-hover-state"><a href="./destination.html">01 &nbsp; DESTINATION</a></li>
+        <li class="relative bd-hover-state"><a href="./crew.html">02 &nbsp; CREW</a></li>
+        <li class="relative bd-hover-state"><a href="./technology.html">03 &nbsp; TECHNOLOGY</a></li>
+      </menu>
+      <button id="hamburgerBtn" class="sm:hidden h-10 w-10"><img src="./assets/shared/icon-hamburger.svg" alt="hamburger-Menu"></button>
+    </nav>
+  </header>
+  <aside id="sidebar" class="absolute top-0 bottom-0 h-full right-0 transiition-all hidden sm:hidden bg-black bg-opacity-10 backdrop-blur-[18px] w-4/6 z-20">
+    <div class="h-10"><img class="closeBtn ms-auto cursor-pointer h-full mt-5 me-5" src="./assets/shared/icon-close.svg" alt="Close button" /></div>
+    <ul class="flex flex-col gap-10 mt-20 ms-10 tracking-widest sm:text-xl xs:text-lg">
+      <a class="closeBtn" href="#"><li class="relative  bd-active-state-mobile"><span class="font-bold">00</span> &nbsp; HOME</li></a>
+      <a class="closeBtn" href="./destination.html"><li class="relative bd-hover-state-mobile"><span class="font-bold">01</span> &nbsp; DESTINATION</li></a>
+      <a class="closeBtn" href="./crew.html"><li class="relative bd-hover-state-mobile "><span class="font-bold">02</span> &nbsp; CREW</li></a>
+      <a class="closeBtn" href="./technology.html"><li class="relative bd-hover-state-mobile "><span class="font-bold">03</span> &nbsp; TECHNOLOGY</li></a>
+    </ul>
+  </aside>
+  <main>
+      <section class="px-10 md:px-20 pt-10 pb-16 md:pt-36 md:pb-24 flex flex-col md:flex-row gap-20 md:gap-8 justify-around items-center">
+        <article class="text-center md:text-left max-w-[28rem]">
+          <span class="barlow-condensed-regular tracking-widest text-blue-100 text-[1.4rem] text-xl sm:text-2xl">SO, YOU WANT TO TRAVEL TO </span><br>
+          <h1 class="sm:my-10 mt-11 mb-9 text-8xl tracking-wide bellefair-regular leading-[50px]">SPACE</h1>
+          <p class="text-blue-100 barlow-regular">Let’s face it; if you want to go to space, you might as well genuinely go to 
+          outer space and not hover kind of on the edge of it. Well sit back, and relax 
+          because we’ll give you a truly out of this world experience! </p>
+        </article>
+        <div>
+          <a href="./destination.html"><button id="exp-btn" class="text-black relative bellefair-regular bg-white rounded-full w-36 h-36 text-2xl sm:w-40 sm:h-40 md:w-48 md:h-48 md:text-3xl" type="button">EXPLORE</button></a>
+        </div>
+      </section>
+  </main>
+  <script src="./space.js"></script>
+</body>
+</html>

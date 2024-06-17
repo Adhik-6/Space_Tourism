@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/shared/favicon.png">
+  <link rel="stylesheet" href="space_tour.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>var currentPage = 'destination';</script>
+  <title>Space tourism website</title>
+</head>
+<body class="relative min-h-screen bg-[url('./assets/destination/background-destination-mobile.jpg')] sm:bg-[url('./assets/destination/background-destination-tablet.jpg')] md:bg-[url('./assets/destination/background-destination-desktop.jpg')] bg-center bg-cover  bg-no-repeat text-white">
+  <header>
+    <nav class="whitespace-nowrap barlow-condensed-regular pt-5 px-5 flex justify-between sm:grid sm:grid-cols-12 md:grid-cols-3 sm:px-0 sm:pt-0 md:pt-10 md:h-32 items-center">
+      <div class="sm:block sm:ps-8 md:ps-10 sm:col-span-2 md:col-span-1">
+        <img class="w-10 sm:w-[48px]" src="./assets/shared/logo.svg" alt="logo">
+      </div>
+      <menu class="sm:col-span-10 md:col-span-2 hidden sm:flex justify-between items-center relative h-20 bg-white bg-opacity-10 backdrop-blur-[12px] gap-[48px] md:px-[55px] sm:px-[40px] shadow-md">
+        <hr class="hidden md:block border-slate-600 absolute w-[38%] top-10 -left-[35%]">
+        <li class="relative bd-hover-state"><a href="./index.html">00 &nbsp; HOME</a></li>
+        <li class="relative bd-active-state"><a href="#">01 &nbsp; DESTINATION</a></li>
+        <li class="relative bd-hover-state"><a href="./crew.html">02 &nbsp; CREW</a></li>
+        <li class="relative bd-hover-state"><a href="./technology.html">03 &nbsp; TECHNOLOGY</a></li>
+      </menu>
+      <button id="hamburgerBtn" class="sm:hidden h-10 w-10"><img src="./assets/shared/icon-hamburger.svg" alt="hamburger-Menu"></button>
+    </nav>
+  </header>
+  <aside id="sidebar" class="absolute top-0 bottom-0 h-full right-0 hidden transiition-all sm:hidden bg-black bg-opacity-10 backdrop-blur-[18px] w-4/6 z-20">
+    <div class="h-10"><img class="closeBtn ms-auto cursor-pointer h-full mt-5 me-5" src="./assets/shared/icon-close.svg" alt="Close button" /></div>
+    <ul class="flex flex-col gap-10 mt-20 ms-10 tracking-widest sm:text-xl xs:text-lg">
+      <a class="closeBtn" href="./index.html"><li class="relative  bd-hover-state-mobile"><span class="font-bold">00</span> &nbsp; HOME</li></a>
+      <a class="closeBtn" href="#"><li class="relative bd-active-state-mobile "><span class="font-bold">01</span> &nbsp; DESTINATION</li></a>
+      <a class="closeBtn" href="./crew.html"><li class="relative bd-hover-state-mobile "><span class="font-bold">02</span> &nbsp; CREW</li></a>
+      <a class="closeBtn" href="./technology.html"><li class="relative bd-hover-state-mobile "><span class="font-bold">03</span> &nbsp; TECHNOLOGY</li></a>
+    </ul>
+  </aside>
+  <main>
+    <section class="py-10 mb-10 px-4 md:pb-5 text-center md:text-left sm:px-10">
+      <h2 class="text-2xl sm:text-left md:ms-16 whitespace-nowrap tracking-widest barlow-condensed-regular"><span class="text-slate-600 font-bold">01</span> &nbsp;PICK YOUR DESTINATION</h2>
+      <section class="mt-16 flex flex-col md:flex-row gap-14 sm:gap-20 md:gap-14 justify-around items-center md:mt-20">
+        <figure class="flex-basis-0 flex-grow w-52 sm:w-64 max-w-96 md:min-w-72">
+          <img id="planetImg" src="./assets/destination/image-mars.webp" alt="Mars">
+        </figure>
+        <section class="flex-basis-0 flex-grow grid max-w-sm grid-rows-[40px,120px,130px,4rem,6rem] items-center">
+          <ul class="text-blue-100 barlow-condensed-regular flex tracking-widest gap-10 h-10 justify-around md:justify-start">
+            <li><button class="planetBtn relative bd-active-state bd-active-state-alt">MARS</button></li>
+            <li><button class="planetBtn relative bd-hover-state bd-hover-state-alt">MOON</button></li>
+            <li><button class="planetBtn relative bd-hover-state bd-hover-state-alt">EUROPA</button></li>
+            <li><button class="planetBtn relative bd-hover-state bd-hover-state-alt">TITAN</button></li>
+          </ul>
+          <h1 id="planetName" class="text-[6rem] sm:text-8xl mt-5 self-center bellefair-regular">MARS</h1>
+          <article class="mt-2">
+            <p id="planetDesc" class="text-blue-100 barlow-regular">
+              Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+              the tallest planetary mountain in our solar system. It’s two and a half times 
+              the size of Everest!
+            </p>
+          </article>
+          <hr class="border-slate-600">
+          <div class="mt-10 sm:mt-0 md:mt-2 md:self-start gap-6 sm:gap-4 flex flex-col sm:flex-row items-center">
+            <div>
+              <h5 class="text-blue-100 tracking-widest text-sm mb-[5px] barlow-condensed-regular ">AVG. DISTANCE</h5>
+              <p id="planetDist" class="text-3xl sm:text-[1.8rem] bellefair-regular">225 MIL. KM</p>
+            </div>
+            <div class="mx-auto">
+              <h5 class="text-blue-100 tracking-widest text-sm mb-[5px] barlow-condensed-regular ">EST. TRAVEL TIME</h5>
+              <p id="travel" class="text-3xl sm:text-[1.8rem] bellefair-regular">9 MONTHS</p>
+            </div>
+          </div>
+        </section>
+      
+      </section>
+    </section>
+  </main>
+  <script src="./space.js"></script>
+</body>
+</html>

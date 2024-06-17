@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/shared/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>var currentPage = 'crew';</script>
+  <style type="text/tailwindcss"></style>
+  <link rel="stylesheet" href="space_tour.css">
+  <title>Space tourism website</title>
+</head>
+<body class="relative min-h-screen bg-[url('./assets/crew/background-crew-mobile.jpg')] sm:bg-[url('./assets/crew/background-crew-tablet.jpg')] md:bg-[url('./assets/crew/background-crew-desktop.jpg')] bg-center bg-cover  bg-no-repeat text-white">
+  <header>
+    <nav class="whitespace-nowrap barlow-condensed-regular pt-5 px-5 flex justify-between sm:grid sm:grid-cols-12 md:grid-cols-3 sm:px-0 sm:pt-0 md:pt-10 md:h-32 items-center">
+      <div class="sm:block sm:ps-8 md:ps-10 sm:col-span-2 md:col-span-1">
+        <img class="w-10 sm:w-[48px]" src="./assets/shared/logo.svg" alt="logo">
+      </div>
+      <menu class="sm:col-span-10 md:col-span-2 hidden sm:flex justify-between items-center relative h-20 bg-black bg-opacity-10 backdrop-blur-[12px] gap-[48px] md:px-[55px] sm:px-[40px] shadow-md">
+        <hr class="hidden md:block border-slate-600 absolute w-[38%] top-10 -left-[35%]">
+        <li class="relative bd-hover-state"><a href="./index.html">00 &nbsp; HOME</a></li>
+        <li class="relative bd-hover-state"><a href="./destination.html">01 &nbsp; DESTINATION</a></li>
+        <li class="relative bd-active-state"><a href="#">02 &nbsp; CREW</a></li>
+        <li class="relative bd-hover-state"><a href="./technology.html">03 &nbsp; TECHNOLOGY</a></li>
+      </menu>
+      <button id="hamburgerBtn" class="sm:hidden h-10 w-10"><img src="./assets/shared/icon-hamburger.svg" alt="hamburger-Menu"></button>
+    </nav>
+  </header>
+  <aside id="sidebar" class="absolute top-0 bottom-0 h-full right-0 hidden transiition-all sm:hidden bg-black bg-opacity-10 backdrop-blur-[18px] w-4/6 z-20">
+    <div class="h-10"><img class="closeBtn ms-auto cursor-pointer h-full mt-5 me-5" src="./assets/shared/icon-close.svg" alt="Close button" /></div>
+    <ul class="flex flex-col gap-10 mt-20 ms-10 tracking-widest sm:text-xl xs:text-lg">
+      <a class="closeBtn" href="./index.html"><li class="relative  bd-hover-state-mobile"><span class="font-bold">00</span> &nbsp; HOME</li></a>
+      <a class="closeBtn" href="./destination.html"><li class="relative bd-hover-state-mobile "><span class="font-bold">01</span> &nbsp; DESTINATION</li></a>
+      <a class="closeBtn" href="#"><li class="relative bd-active-state-mobile "><span class="font-bold">02</span> &nbsp; CREW</li></a>
+      <a class="closeBtn" href="./technology.html"><li class="relative bd-hover-state-mobile "><span class="font-bold">03</span> &nbsp; TECHNOLOGY</li></a>
+    </ul>
+  </aside>
+  <main>
+    <section class="pt-10 md:pt-7 px-3 sm:pb-0 md:py-10 mb-6 sm:mb-10 text-center md:text-left sm:px-5 ">
+      <h2 class="text-2xl sm:text-left sm:ms-8 mb-14 md:mb-8 whitespace-nowrap tracking-widest barlow-condensed-regular"><span class="text-slate-600 font-bold">02</span> &nbsp;MEET YOUR CREW</h2>
+      <section class="grid grid-cols-1 md:grid-cols-2 md:gap-5 mx-auto items-center">
+        <section class="mx-auto md:ms-auto flex flex-col h-full max-w-md">
+          <article class="my-auto">
+            <h2 id="memberRole" class="bellefair-regular tracking-widest text-gray-400 text-[1.4rem] text-xl sm:text-2xl">COMMANDER</h2>
+            <h1 id="memberName" class="text-3xl sm:text-[2.8rem] mt-2 mb-4 sm:mt-4 sm:mb-6 tracking-wide bellefair-regular leading-[50px]">DOUGLAS HURLEY</h1>
+            <p id="memberBio" class="text-blue-100 barlow-regular">
+              Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+            </p>
+          </article>
+          <ul class="mx-auto md:mx-0 my-8 md:my-auto pagination flex gap-4">
+            <li><button class="pagination-active"></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+          </ul>
+        </section>
+        <figure class="w-60 mx-auto sm:w-72 md:min-w-80">
+          <img id="memberImg" src="./assets/crew/image-douglas-hurley.webp" alt="Douglas Hurley">
+        </figure>
+      </section>
+    </section>
+  </main>
+  <script src="./space.js"></script>
+</body>
+</html>

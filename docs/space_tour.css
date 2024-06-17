@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+.barlow-condensed-regular {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.barlow-regular{
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.bellefair-regular {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.bd-active-state::before{
+    content: '';
+    height: 3px;
+    width: 105%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    bottom: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bd-active-state-mobile::before{
+    content: '';
+    height: 105%;
+    width: 3.5px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-50%);
+    left: 99%;
+    bottom: 0;
+}
+.bd-active-state-alt::before {
+    bottom: -17px;
+}
+.bd-hover-state::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: rgba(169, 168, 168, 0.811);
+    bottom: -27px;
+    left: 50%;
+    transform: translateX(-50%); 
+    transition: all 0.4s;
+}
+.bd-hover-state-mobile::after{
+    content: '';
+    height: 105%;
+    width: 0;
+    position: absolute;
+    background-color: rgba(169, 168, 168, 0.811);
+    bottom: 0;
+    left: 99%;
+    transition: all 0.4s;
+}
+.bd-hover-state-mobile:hover::after{
+    width: 3.5px; 
+}
+.bd-hover-state-alt::after{
+    bottom: -17px;
+}
+.bd-hover-state:hover::after {
+    width: 105%; 
+    transform: translateX(-50%);
+}
+#exp-btn::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: -10;
+    transition: all 0.45s;
+}
+#exp-btn:hover::before {
+    width: 18rem;
+    height: 18rem;
+    opacity: 0.15;
+}
+.pagination li button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.3;
+}
+.pagination li button:hover{
+    opacity: 0.65;
+}
+.pagination-active {
+    opacity: 100 !important;
+}
+.launchbtn button{
+    width: 3.8rem;
+    height: 3.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.269);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.launchbtn button:hover{
+    border-color: white;
+}
+.launchbtn-active{
+    background-color: white;
+    color:black;
+    border-color: white;
+}
+
+
+@media (max-width: 640px){
+    #exp-btn::before {
+        width:140px;
+        height:140px;
+    }
+    #exp-btn:hover::before {
+        width: 14rem;
+        height: 14rem;
+        opacity: 0.15;
+    }
+}
+
+@media (max-width: 768px){
+    #exp-btn::before {
+        width:160px;
+        height:160px;
+    }
+    #exp-btn:hover::before {
+        width: 16rem;
+        height: 16rem;
+        opacity: 0.15;
+    }
+    .launchbtn button{
+        width: 3rem;
+        height: 3rem;
+    }
+}
