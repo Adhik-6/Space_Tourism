@@ -37,8 +37,8 @@ This folder contains the image preview of diffrent pages in diffrent screen size
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-space-tourism-web-page-using-tailwind-css-doEIIsFgMl
+- Live Site URL: https://adhik-6.github.io/Space_Tourism/
 
 ## My process
 
@@ -70,4 +70,4 @@ In future I want to add a smooth scrolling transition to the sidebar in mobile v
 
 ## Author
 
-Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+Frontend Mentor - [@Adhik-6](https://www.frontendmentor.io/profile/Adhik-6)
