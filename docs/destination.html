@@ -41,7 +41,7 @@
         <figure class="flex-basis-0 flex-grow w-52 sm:w-64 max-w-96 md:min-w-72">
           <img id="planetImg" src="./assets/destination/image-mars.webp" alt="Mars">
         </figure>
-        <section class="flex-basis-0 flex-grow grid max-w-sm grid-rows-[40px,120px,130px,4rem,6rem] items-center">
+        <section class="flex-basis-0 flex-grow md:grid max-w-sm md:grid-rows-[40px,120px,130px,6rem] flex flex-col sm:gap-4 md:gap-0 items-center">
           <ul class="text-blue-100 barlow-condensed-regular flex tracking-widest gap-10 h-10 justify-around md:justify-start">
             <li><button class="planetBtn relative bd-active-state bd-active-state-alt">MARS</button></li>
             <li><button class="planetBtn relative bd-hover-state bd-hover-state-alt">MOON</button></li>
@@ -56,19 +56,17 @@
               the size of Everest!
             </p>
           </article>
-          <hr class="border-slate-600">
-          <div class="mt-10 sm:mt-0 md:mt-2 md:self-start gap-6 sm:gap-4 flex flex-col sm:flex-row items-center">
-            <div>
+          <div class="mt-10 md:mt-10 md:self-start w-full gap-6 sm:gap-0 md:gap-4 flex flex-col sm:flex-row items-center relative justify-around md:justify-start">
+            <div class="before:content-[''] before:h-[1px] before:w-full before:absolute before:bg-slate-600 before:-top-6 before:-left-1">
               <h5 class="text-blue-100 tracking-widest text-sm mb-[5px] barlow-condensed-regular ">AVG. DISTANCE</h5>
               <p id="planetDist" class="text-3xl sm:text-[1.8rem] bellefair-regular">225 MIL. KM</p>
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto sm:mx-0 md:mx-auto">
               <h5 class="text-blue-100 tracking-widest text-sm mb-[5px] barlow-condensed-regular ">EST. TRAVEL TIME</h5>
               <p id="travel" class="text-3xl sm:text-[1.8rem] bellefair-regular">9 MONTHS</p>
             </div>
           </div>
         </section>
-      
       </section>
     </section>
   </main>
