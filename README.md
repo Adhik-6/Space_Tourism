@@ -4,6 +4,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ## Table of contents
 
+- [Table of contents](#table-of-contents)
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
@@ -37,8 +38,8 @@ This folder contains the image preview of diffrent pages in diffrent screen size
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/responsive-space-tourism-web-page-using-tailwind-css-doEIIsFgMl
-- Live Site URL: https://adhik-6.github.io/Space_Tourism/
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-space-tourism-web-page-using-tailwind-css-doEIIsFgMl)
+- [Live Site URL](https://adhik-6.github.io/Space_Tourism/)
 
 ## My process
 
