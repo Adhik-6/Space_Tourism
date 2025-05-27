@@ -32,9 +32,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshots](./preview_images/)
+![Screenshots](./preview_images/home/landing_page_desktop.jpeg)
 
-This folder contains the image preview of diffrent pages in diffrent screen sizes.
+> Image preview of diffrent pages in diffrent screen sizes are available in the `preview_images/` folder.
 
 ### Links
 
